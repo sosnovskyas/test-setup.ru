@@ -22,16 +22,17 @@ new Header({
 new Carousel({
   elem: document.querySelector('.carousel'),
   autoplay: true,
+  delay: 1000,
   items: [
     {title: '1 About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
     {title: '2 Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
     {title: '3 News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'},
-    {title: '4 About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
-    {title: '5 Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
+    {title: '4 Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
+    {title: '5 About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
     {title: '6 News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'},
     {title: '7 About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
-    {title: '8 Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
-    {title: '9 News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'},
+    {title: '8 News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'},
+    {title: '9 Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
     {title: '10 News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'}
   ]
 });

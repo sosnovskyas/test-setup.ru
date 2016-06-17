@@ -34,6 +34,7 @@ export default class Carousel {
 
     this.render(this.currentPage);
     elem.addEventListener('click', (event) => this.onClick(event));
+    if (this.autoplay) this.runAutoplay();
   }
 
   render(page) {
@@ -76,7 +77,9 @@ export default class Carousel {
     if (event.target.closest('.carousel__arrow-right')) this.next();
   }
 
-  intervalHandler() {
-
+  runAutoplay() {
+    setInterval(()=> {
+      this.next();
+    }, this.delay)
   }
 }
