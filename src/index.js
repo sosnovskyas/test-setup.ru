@@ -24,6 +24,12 @@ new Carousel({
   items: [
     {title: 'About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
     {title: 'Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
+    {title: 'News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'},
+    {title: 'About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
+    {title: 'Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
+    {title: 'News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'},
+    {title: 'About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
+    {title: 'Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
     {title: 'News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'}
 
   ]
