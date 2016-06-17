@@ -1,0 +1,10 @@
+.carousel__arrow.carousel__arrow-left   <
+.carousel__arrow.carousel__arrow-right  >
+
+ul.carousel__list
+  - each item in items
+    li.carousel__list-item
+      .carousel__list-item-title(class='carousel__list-item-title_bgcolor-' + item.headerBgColor)= item.title
+      a.carousel__list-item-link(href=item.link)
+        img.carousel__list-item-image(src=item.image, alt=item.title)
+
