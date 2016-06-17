@@ -13,9 +13,9 @@ document.body.innerHTML = indexTemplate();
 new Header({
   elem: document.querySelector('.header'),
   navItems: [
-    {title: 'home', link: 'index.html'},
-    {title: 'blog', link: 'blog.html'},
-    {title: 'contacts', link: 'contacts.html'}
+    {title: 'Home', link: 'index.html'},
+    {title: 'Blog', link: 'blog.html'},
+    {title: 'Contacts', link: 'contacts.html'}
   ]
 });
 
