@@ -22,16 +22,16 @@ new Header({
 new Carousel({
   elem: document.querySelector('.carousel'),
   items: [
-    {title: 'About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
-    {title: 'Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
-    {title: 'News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'},
-    {title: 'About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
-    {title: 'Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
-    {title: 'News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'},
-    {title: 'About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
-    {title: 'Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
-    {title: 'News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'}
-
+    {title: '1 About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
+    {title: '2 Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
+    {title: '3 News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'},
+    {title: '4 About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
+    {title: '5 Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
+    {title: '6 News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'},
+    {title: '7 About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
+    {title: '8 Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
+    {title: '9 News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'},
+    {title: '10 News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'}
   ]
 });
 

@@ -10,35 +10,67 @@ export default class Carousel {
     count = 3,        // количество на странице
     autoplay = false, // автопереход
     delay = 3000,     // задержка autoplay
-    circle = false    // по кругу
+    circle = false,    // по кругу
+    current = 1
   }) {
     this.elem = elem;
     this.items = items;
-    this.autoplay = autoplay;
     this.count = count;
+
+    this.currentPage = current;
+    this.maxPages = Math.ceil(items.length / this.count);
+
+    this.autoplay = autoplay;
     this.delay = delay;
-    this.circle = circle;
+    if (this.autoplay) {
+      this.circle = true;
+    } else {
+      this.circle = circle;
+    }
 
-    /*
-     if (autoplay) {
-     // todo: interval handler
-     this.interval = setInterval(()=> this.intervalHandler(), 3000)
-     }
-
-     if (circle) {
-
-     }
-     */
-
-    this.render(items)
+    this.render(this.currentPage);
+    elem.addEventListener('click', (event) => this.onClick(event));
   }
 
-  render(items) {
+  render(page) {
     let carousel = document.createElement('ul');
-    if (items.length > this.count) {
-      items.splice(this.count, (items.length - this.count));
+    let tmpItems = [];
+
+    for (let i = 0; i < this.count; i++) {
+      let item = this.items[((page - 1) * this.count) + i];
+      if (item) {
+        tmpItems.push(item);
+      }
     }
-    this.elem.innerHTML = carouselTemplate({items: items});
+
+    this.elem.innerHTML = carouselTemplate({items: tmpItems});
+  }
+
+  next() {
+    if (this.currentPage == this.maxPages) {
+      if (this.circle) {
+        this.currentPage = 1;
+        this.render(this.currentPage);
+      }
+    } else {
+      this.render(++this.currentPage);
+    }
+  }
+
+  previous() {
+    if (this.currentPage == 1) {
+      if (this.circle) {
+        this.currentPage = this.maxPages;
+        this.render(this.currentPage);
+      }
+    } else {
+      this.render(--this.currentPage);
+    }
+  }
+
+  onClick(event) {
+    if (event.target.closest('.carousel__arrow-left')) this.previous();
+    if (event.target.closest('.carousel__arrow-right')) this.next();
   }
 
   intervalHandler() {
