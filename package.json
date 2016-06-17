@@ -9,6 +9,7 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^6.3.6",
     "babel-cli": "^6.9.0",
     "babel-core": "^6.9.0",
     "babel-loader": "^6.2.4",
@@ -20,6 +21,7 @@
     "jade": "^1.11.0",
     "jade-loader": "^0.8.0",
     "normalize-styl": "^3.0.3",
+    "postcss-loader": "^0.9.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.1.0",
     "webpack": "^1.13.0",
