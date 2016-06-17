@@ -2,13 +2,22 @@
 
 .search
   @extend .box
+  float: right
 
-  display: inline-block
-  list-style none
+  width: 280px
+  height: 100%
+
+  position: absolute // for height 100% and float child
+
+  right: 0
+
   overflow: hidden
   background-color: #ebebd1
 
   &__title
     background-color: #000
-  &__body
-    width: 100%
+    color: #fff
+    text-align: center
+
+
+

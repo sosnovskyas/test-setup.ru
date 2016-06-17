@@ -1,5 +1,6 @@
 @import '../node_modules/normalize-styl/normalize.styl'
 @import "./_common.styl"
+@import "./_mixins.styl"
 
 
 body
@@ -8,5 +9,8 @@ body
   background-color: #ffa83b
 
 .content
-  margin-bottom: 42px
   @extend .wrapper
+  clearfix()
+
+  position: relative
+  margin-bottom: 42px
