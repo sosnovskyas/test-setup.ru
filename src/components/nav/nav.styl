@@ -1,0 +1,29 @@
+@import "../../_mixins.styl"
+@import "../../_common.styl"
+
+.nav
+  background-color: #000
+
+  &__wrapper
+    @extend .wrapper
+    clearfix()
+
+  &__title
+    color: #fff;
+    float: left
+    padding: 15px
+
+  &__menu
+    width: 364px
+    margin: 0 auto
+    padding: 15px 0
+
+    &-item
+      margin-left: 115px
+
+      text-decoration: none
+      color: #fff
+
+      &:first-child
+        margin-left: 0
+
