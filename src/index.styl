@@ -1,2 +1,30 @@
+@import '../node_modules/normalize-styl/normalize.styl'
+@import "./_common.styl"
+@import "./_mixins.styl"
+
+
 body
-  background-color: gray
+  min-width: 1024px
+  background-color: #ffa83b
+
+.content
+  @extend .wrapper
+  clearfix()
+
+  position: relative // for search block with 100% height
+
+  margin-bottom: 42px
+.footer
+  @extend .wrapper
+  @extend .box
+
+  background-color: #000
+
+  margin-bottom: 42px
+
+  &__content
+    color: #ebebd1
+    font-size: 12px
+    text-align: right
+
+    padding: 11px 16px

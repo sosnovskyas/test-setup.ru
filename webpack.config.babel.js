@@ -5,6 +5,7 @@ import path from 'path'
 
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import ExtractTextPlugin  from 'extract-text-webpack-plugin'
+import CopyWebpackPlugin from 'copy-webpack-plugin'
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
@@ -46,6 +47,7 @@ export default {
   plugins: [
     new ExtractTextPlugin('styles.css', {allChunks: true}),
     new HtmlWebpackPlugin(),
-    new HotModuleReplacementPlugin()
+    new HotModuleReplacementPlugin(),
+    new CopyWebpackPlugin([{ from: 'src/assets', to: '' }], {})
   ]
 }
