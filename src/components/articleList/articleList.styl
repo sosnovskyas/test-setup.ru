@@ -1,0 +1,33 @@
+@import "../../_common.styl"
+@import "../../_mixins.styl"
+
+.article-list
+  width: 602px
+  margin-right: 42px
+
+.article
+  @extend .box
+
+  margin-bottom: 42px
+  background-color: #ebebd1
+
+  padding: 18px
+
+  &__header
+    clearfix()
+    margin-bottom: 18px
+
+  &__title
+    float: left
+
+  &__date
+    float: right
+
+  &__title, &__date
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px
+
+    text-transform: uppercase
+
+  &__content
+      font-size: 12px
