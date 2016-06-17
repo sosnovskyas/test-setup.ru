@@ -37,17 +37,16 @@ export default class Carousel {
   }
 
   render(page) {
-    let carousel = document.createElement('ul');
-    let tmpItems = [];
+    let items = [];
 
     for (let i = 0; i < this.count; i++) {
       let item = this.items[((page - 1) * this.count) + i];
       if (item) {
-        tmpItems.push(item);
+        items.push(item);
       }
     }
 
-    this.list.innerHTML = listTemplate({items: tmpItems});
+    this.list.innerHTML = listTemplate({items: items});
   }
 
   next() {
