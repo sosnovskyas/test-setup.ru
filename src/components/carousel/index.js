@@ -2,6 +2,7 @@
 
 import "./carousel.styl";
 import carouselTemplate from "./carousel.jade";
+import listTemplate from "./list.jade";
 
 export default class Carousel {
   constructor({
@@ -13,7 +14,9 @@ export default class Carousel {
     circle = false,   // по кругу
     current = 1       // текущая page
   }) {
-    this.elem = elem;
+    elem.innerHTML = carouselTemplate();
+    this.list = elem.querySelector('.carousel__list');
+
     this.items = items;
     this.count = count;
 
@@ -22,6 +25,7 @@ export default class Carousel {
 
     this.autoplay = autoplay;
     this.delay = delay;
+
     if (this.autoplay) {
       this.circle = true;
     } else {
@@ -43,7 +47,7 @@ export default class Carousel {
       }
     }
 
-    this.elem.innerHTML = carouselTemplate({items: tmpItems});
+    this.list.innerHTML = listTemplate({items: tmpItems});
   }
 
   next() {
