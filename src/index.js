@@ -13,19 +13,27 @@ document.body.innerHTML = indexTemplate();
 new Header({
   elem: document.querySelector('.header'),
   navItems: [
-    {title: 'home', link: 'index.html'},
-    {title: 'blog', link: 'blog.html'},
-    {title: 'contacts', link: 'contacts.html'}
+    {title: 'Home', link: 'index.html'},
+    {title: 'Blog', link: 'blog.html'},
+    {title: 'Contacts', link: 'contacts.html'}
   ]
 });
 
 new Carousel({
   elem: document.querySelector('.carousel'),
+  autoplay: true,
+  delay: 1000,
   items: [
-    {title: 'About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
-    {title: 'Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
-    {title: 'News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'}
-
+    {title: '1 About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
+    {title: '2 Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
+    {title: '3 News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'},
+    {title: '4 Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
+    {title: '5 About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
+    {title: '6 News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'},
+    {title: '7 About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
+    {title: '8 News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'},
+    {title: '9 Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
+    {title: '10 News', image: 'N.png', link: 'news.html', headerBgColor: 'brown'}
   ]
 });
 
