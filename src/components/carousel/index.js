@@ -10,8 +10,8 @@ export default class Carousel {
     count = 3,        // количество на странице
     autoplay = false, // автопереход
     delay = 3000,     // задержка autoplay
-    circle = false,    // по кругу
-    current = 1
+    circle = false,   // по кругу
+    current = 1       // текущая page
   }) {
     this.elem = elem;
     this.items = items;
