@@ -1,4 +1,6 @@
 @import '../node_modules/normalize-styl/normalize.styl'
+@import "./_common.styl"
+
 
 body
   min-width: 1024px
@@ -7,7 +9,4 @@ body
 
 .content
   margin-bottom: 42px
-
-.article-list
-  width: 602px
-  margin-right: 42px
+  @extend .wrapper
