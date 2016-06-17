@@ -21,6 +21,7 @@ new Header({
 
 new Carousel({
   elem: document.querySelector('.carousel'),
+  autoplay: true,
   items: [
     {title: '1 About Us', image: 'A.png', link: 'about.html', headerBgColor: 'darkGreen'},
     {title: '2 Products', image: 'P.png', link: 'products.html', headerBgColor: 'lightGreen'},
