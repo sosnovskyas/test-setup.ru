@@ -4,11 +4,15 @@
 .article-list
   width: 602px
   margin-right: 42px
+  float: left
 
 .article
   @extend .box
 
-  margin-bottom: 42px
+  margin-top: 42px
+  &:first-child
+    margin-top: 0
+
   background-color: #ebebd1
 
   padding: 18px
