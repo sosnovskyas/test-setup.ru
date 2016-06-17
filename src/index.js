@@ -6,6 +6,7 @@ import indexTemplate from "./index.jade";
 import Header from "./components/header";
 import Carousel from "./components/carousel";
 import ArticleList from "./components/articleList";
+import Search from "./components/search";
 
 document.body.innerHTML = indexTemplate();
 
@@ -40,4 +41,8 @@ new ArticleList({
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scram`
   }]
+});
+
+new Search({
+  elem: document.querySelector('.search')
 });
